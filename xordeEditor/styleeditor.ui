@@ -1,0 +1,1582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StyleEditor</class>
+ <widget class="QWidget" name="StyleEditor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>715</width>
+    <height>448</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_11">
+   <item row="0" column="0">
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>-407</x>
+        <y>0</y>
+        <width>1085</width>
+        <height>973</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_9">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout_7">
+         <item row="0" column="1">
+          <widget class="QLabel" name="label_30">
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>20</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>外观设置</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="0" column="2">
+          <widget class="QPushButton" name="win_save">
+           <property name="text">
+            <string>保存</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="0">
+        <widget class="QGroupBox" name="groupBox">
+         <property name="title">
+          <string>主界面按钮</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QPushButton" name="newMainBtn">
+            <property name="text">
+             <string>new game</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="continueMainBtn">
+            <property name="text">
+             <string>continue</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="loadMainBtn">
+            <property name="text">
+             <string>load data</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="galMainBtn">
+            <property name="text">
+             <string>gallery</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="configMainBtn">
+            <property name="text">
+             <string>config</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="exitMainBtn">
+            <property name="text">
+             <string>exit</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QGroupBox" name="groupBox_3">
+         <property name="title">
+          <string>文本显示框</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="3">
+           <layout class="QGridLayout" name="gridLayout_3">
+            <item row="2" column="1">
+             <widget class="QSpinBox" name="spinNameBackH">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QSpinBox" name="spinTextBackW">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_6">
+              <property name="text">
+               <string>背景尺寸</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QSpinBox" name="spinTextBackH">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QSpinBox" name="spinNameBackW">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="6">
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QLabel" name="label_7">
+              <property name="text">
+               <string>字体格式</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="btnNameFont">
+              <property name="text">
+               <string>...</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="btnTextFont">
+              <property name="text">
+               <string>...</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="4">
+           <layout class="QGridLayout" name="gridLayout_4">
+            <item row="3" column="1">
+             <widget class="QSpinBox" name="spinTextContentY">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QSpinBox" name="spinNameContentY">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QSpinBox" name="spinTextContentX">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QSpinBox" name="spinNameContentX">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>文本框坐标</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLabel" name="label">
+              <property name="text">
+               <string>（基于背景）</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="0">
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QLabel" name="label_9">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_4">
+              <property name="text">
+               <string>名字</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>文本</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="5">
+           <layout class="QGridLayout" name="gridLayout_5">
+            <item row="2" column="1">
+             <widget class="QSpinBox" name="spinNameContentH">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QSpinBox" name="spinNameContentW">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QSpinBox" name="spinTextContentW">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QSpinBox" name="spinTextContentH">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_8">
+              <property name="text">
+               <string>文本框尺寸</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="2">
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="2" column="1">
+             <widget class="QSpinBox" name="spinNameBackY">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QSpinBox" name="spinNameBackX">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QSpinBox" name="spinTextBackX">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QSpinBox" name="spinTextBackY">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_5">
+              <property name="text">
+               <string>背景坐标</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
+           <layout class="QGridLayout" name="gridLayout_15">
+            <item row="1" column="0">
+             <widget class="QLineEdit" name="lineNamePic"/>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLineEdit" name="lineTextPic"/>
+            </item>
+            <item row="1" column="1">
+             <widget class="QToolButton" name="btnNamePic">
+              <property name="text">
+               <string>...</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QToolButton" name="btnTextPic">
+              <property name="text">
+               <string>...</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_31">
+              <property name="text">
+               <string>图片</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QGroupBox" name="groupBox_4">
+         <property name="title">
+          <string>界面切换按钮</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QPushButton" name="toMainBtn">
+            <property name="text">
+             <string>to main</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="toSceneBtn">
+            <property name="text">
+             <string>to scene</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="toSaveBtn">
+            <property name="text">
+             <string>to save</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="toLoadBtn">
+            <property name="text">
+             <string>to load</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QGroupBox" name="groupBox_5">
+         <property name="title">
+          <string>设置界面</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_8">
+          <item row="0" column="2">
+           <widget class="QLabel" name="label_21">
+            <property name="text">
+             <string>图片源</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QLabel" name="label_22">
+            <property name="text">
+             <string>图片位置</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="4">
+           <widget class="QLabel" name="label_23">
+            <property name="text">
+             <string>图片尺寸</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="5">
+           <widget class="QLabel" name="label_24">
+            <property name="text">
+             <string>滑块位置</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="6">
+           <widget class="QLabel" name="label_25">
+            <property name="text">
+             <string>滑块尺寸</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" colspan="2">
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QLabel" name="label_17">
+              <property name="text">
+               <string>快进速度</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_18">
+              <property name="text">
+               <string>自动速度</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_12">
+              <property name="text">
+               <string>逐显速度</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_13">
+              <property name="text">
+               <string>文字尺寸</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_15">
+              <property name="text">
+               <string>主音量</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_16">
+              <property name="text">
+               <string>主界面bgm</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_19">
+              <property name="text">
+               <string>语音音量</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_14">
+              <property name="text">
+               <string>bgm音量</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_11">
+              <property name="text">
+               <string>bgm音量（语音时）</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_10">
+              <property name="text">
+               <string>音效音量</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="2">
+           <layout class="QGridLayout" name="gridLayout_6">
+            <item row="7" column="0">
+             <widget class="QLineEdit" name="vocalvolumeLine"/>
+            </item>
+            <item row="0" column="1">
+             <widget class="QToolButton" name="skipSpeedLineBtn">
+              <property name="text">
+               <string>...</string>
+              </property>
+             </widget>
+            </item>
+            <item row="10" column="1">
+             <widget class="QToolButton" name="soundvolumeLineBtn">
+              <property name="text">
+               <string>...</string>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="1">
+             <widget class="QToolButton" name="bgmvolumeLineBtn">
+              <property name="text">
+               <string>...</string>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="0">
+             <widget class="QLineEdit" name="bgmwhenvocalvolumeLine"/>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLineEdit" name="mainvolumeLine"/>
+            </item>
+            <item row="8" column="0">
+             <widget class="QLineEdit" name="bgmvolumeLine"/>
+            </item>
+            <item row="2" column="1">
+             <widget class="QToolButton" name="textshowSpeedLineBtn">
+              <property name="text">
+               <string>...</string>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="1">
+             <widget class="QToolButton" name="bgmwhenvocalvolumeLineBtn">
+              <property name="text">
+               <string>...</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLineEdit" name="textsizeLine"/>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLineEdit" name="skipSpeedLine"/>
+            </item>
+            <item row="5" column="1">
+             <widget class="QToolButton" name="mainbgmvolumeLineBtn">
+              <property name="text">
+               <string>...</string>
+              </property>
+             </widget>
+            </item>
+            <item row="10" column="0">
+             <widget class="QLineEdit" name="soundvolumeLine"/>
+            </item>
+            <item row="5" column="0">
+             <widget class="QLineEdit" name="mainbgmvolumeLine"/>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLineEdit" name="textshowSpeedLine"/>
+            </item>
+            <item row="4" column="1">
+             <widget class="QToolButton" name="mainvolumeLineBtn">
+              <property name="text">
+               <string>...</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLineEdit" name="autoSpeedLine"/>
+            </item>
+            <item row="3" column="1">
+             <widget class="QToolButton" name="textsizeLineBtn">
+              <property name="text">
+               <string>...</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QToolButton" name="autoSpeedLineBtn">
+              <property name="text">
+               <string>...</string>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="1">
+             <widget class="QToolButton" name="vocalvolumeLineBtn">
+              <property name="text">
+               <string>...</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="3">
+           <layout class="QGridLayout" name="gridLayout_14">
+            <item row="3" column="2">
+             <widget class="QSpinBox" name="textsizePicY">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="1">
+             <widget class="QSpinBox" name="bgmwhenvocalvolumePicX">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="2">
+             <widget class="QSpinBox" name="mainbgmvolumePicY">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QSpinBox" name="autoSpeedPicX">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QSpinBox" name="autoSpeedPicY">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="QSpinBox" name="textshowSpeedPicY">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QSpinBox" name="skipSpeedPicX">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QSpinBox" name="textshowSpeedPicX">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="2">
+             <widget class="QSpinBox" name="mainvolumePicY">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="2">
+             <widget class="QSpinBox" name="vocalvolumePicY">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="1">
+             <widget class="QSpinBox" name="mainbgmvolumePicX">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="1">
+             <widget class="QSpinBox" name="vocalvolumePicX">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QSpinBox" name="mainvolumePicX">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="1">
+             <widget class="QSpinBox" name="bgmvolumePicX">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="1">
+             <widget class="QSpinBox" name="soundvolumePicX">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="2">
+             <widget class="QSpinBox" name="soundvolumePicY">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="2">
+             <widget class="QSpinBox" name="bgmvolumePicY">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="2">
+             <widget class="QSpinBox" name="bgmwhenvocalvolumePicY">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QSpinBox" name="skipSpeedPicY">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QSpinBox" name="textsizePicX">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="4">
+           <layout class="QGridLayout" name="gridLayout_21">
+            <item row="0" column="2">
+             <widget class="QSpinBox" name="skipSpeedPicH">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QSpinBox" name="textsizePicW">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QSpinBox" name="autoSpeedPicW">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="1">
+             <widget class="QSpinBox" name="bgmvolumePicW">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="1">
+             <widget class="QSpinBox" name="mainbgmvolumePicW">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QSpinBox" name="autoSpeedPicH">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QSpinBox" name="skipSpeedPicW">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="1">
+             <widget class="QSpinBox" name="vocalvolumePicW">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="1">
+             <widget class="QSpinBox" name="bgmwhenvocalvolumePicW">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="QSpinBox" name="textshowSpeedPicH">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="2">
+             <widget class="QSpinBox" name="bgmwhenvocalvolumePicH">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="1">
+             <widget class="QSpinBox" name="soundvolumePicW">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="2">
+             <widget class="QSpinBox" name="soundvolumePicH">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="2">
+             <widget class="QSpinBox" name="bgmvolumePicH">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="2">
+             <widget class="QSpinBox" name="mainvolumePicH">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="2">
+             <widget class="QSpinBox" name="mainbgmvolumePicH">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="2">
+             <widget class="QSpinBox" name="vocalvolumePicH">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QSpinBox" name="mainvolumePicW">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QSpinBox" name="textshowSpeedPicW">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="2">
+             <widget class="QSpinBox" name="textsizePicH">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="5">
+           <layout class="QGridLayout" name="gridLayout_22">
+            <item row="1" column="2">
+             <widget class="QSpinBox" name="autoSpeedSliderY">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="QSpinBox" name="textshowSpeedSliderY">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QSpinBox" name="textsizeSliderX">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QSpinBox" name="skipSpeedSliderY">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="1">
+             <widget class="QSpinBox" name="vocalvolumeSliderX">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="2">
+             <widget class="QSpinBox" name="textsizeSliderY">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="2">
+             <widget class="QSpinBox" name="bgmvolumeSliderY">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="1">
+             <widget class="QSpinBox" name="soundvolumeSliderX">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="2">
+             <widget class="QSpinBox" name="mainbgmvolumeSliderY">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="1">
+             <widget class="QSpinBox" name="bgmvolumeSliderX">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="2">
+             <widget class="QSpinBox" name="soundvolumeSliderY">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="2">
+             <widget class="QSpinBox" name="vocalvolumeSliderY">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QSpinBox" name="textshowSpeedSliderX">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QSpinBox" name="mainvolumeSliderX">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QSpinBox" name="autoSpeedSliderX">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QSpinBox" name="skipSpeedSliderX">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="1">
+             <widget class="QSpinBox" name="bgmwhenvocalvolumeSliderX">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="2">
+             <widget class="QSpinBox" name="mainvolumeSliderY">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="2">
+             <widget class="QSpinBox" name="bgmwhenvocalvolumeSliderY">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="1">
+             <widget class="QSpinBox" name="mainbgmvolumeSliderX">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="6">
+           <layout class="QGridLayout" name="gridLayout_10">
+            <item row="1" column="2">
+             <widget class="QSpinBox" name="autoSpeedSliderH">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="QSpinBox" name="textshowSpeedSliderH">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QSpinBox" name="textsizeSliderW">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QSpinBox" name="skipSpeedSliderH">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="1">
+             <widget class="QSpinBox" name="vocalvolumeSliderW">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="2">
+             <widget class="QSpinBox" name="textsizeSliderH">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="2">
+             <widget class="QSpinBox" name="bgmvolumeSliderH">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="1">
+             <widget class="QSpinBox" name="soundvolumeSliderW">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="2">
+             <widget class="QSpinBox" name="mainbgmvolumeSliderH">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="1">
+             <widget class="QSpinBox" name="bgmvolumeSliderW">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="2">
+             <widget class="QSpinBox" name="soundvolumeSliderH">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="2">
+             <widget class="QSpinBox" name="vocalvolumeSliderH">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QSpinBox" name="textshowSpeedSliderW">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QSpinBox" name="mainvolumeSliderW">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QSpinBox" name="autoSpeedSliderW">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QSpinBox" name="skipSpeedSliderW">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="1">
+             <widget class="QSpinBox" name="bgmwhenvocalvolumeSliderW">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="2">
+             <widget class="QSpinBox" name="mainvolumeSliderH">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="2">
+             <widget class="QSpinBox" name="bgmwhenvocalvolumeSliderH">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="1">
+             <widget class="QSpinBox" name="mainbgmvolumeSliderW">
+              <property name="maximum">
+               <number>1999</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_20">
+            <property name="text">
+             <string>滑块样式表</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2" colspan="5">
+           <widget class="QLineEdit" name="sliderStyleSheetLine"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QGroupBox" name="groupBox_6">
+         <property name="title">
+          <string>存档读档界面</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QPushButton" name="SLBtnIn1">
+              <property name="text">
+               <string>1</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="SLBtnIn2">
+              <property name="text">
+               <string>2</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="SLBtnIn3">
+              <property name="text">
+               <string>3</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="SLBtnIn4">
+              <property name="text">
+               <string>4</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="SLBtnIn5">
+              <property name="text">
+               <string>5</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="SLBtnIn6">
+              <property name="text">
+               <string>6</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="SLBtnIn7">
+              <property name="text">
+               <string>7</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="SLBtnIn8">
+              <property name="text">
+               <string>8</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="SLBtnIn9">
+              <property name="text">
+               <string>9</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="SLBtnIn10">
+              <property name="text">
+               <string>10</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QGridLayout" name="gridLayout_12">
+            <item row="0" column="4">
+             <widget class="QPushButton" name="SLBtn5">
+              <property name="text">
+               <string>data_5</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QPushButton" name="SLBtn8">
+              <property name="text">
+               <string>data_8</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QPushButton" name="SLBtn3">
+              <property name="text">
+               <string>data_3</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="3">
+             <widget class="QPushButton" name="SLBtn9">
+              <property name="text">
+               <string>data_9</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QPushButton" name="SLBtn1">
+              <property name="text">
+               <string>data_1</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QPushButton" name="SLBtn6">
+              <property name="text">
+               <string>data_6</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="3">
+             <widget class="QPushButton" name="SLBtn4">
+              <property name="text">
+               <string>data_4</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QPushButton" name="SLBtn7">
+              <property name="text">
+               <string>data_7</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="4">
+             <widget class="QPushButton" name="SLBtn10">
+              <property name="text">
+               <string>data_10</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QPushButton" name="SLBtn2">
+              <property name="text">
+               <string>data_2</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QGroupBox" name="groupBox_7">
+         <property name="title">
+          <string>历史记录界面</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item>
+           <widget class="QLabel" name="label_26">
+            <property name="text">
+             <string>历史记录样式表</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="historyStyleSheetLine"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QGroupBox" name="groupBox_8">
+         <property name="title">
+          <string>画廊界面</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_13">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_27">
+            <property name="text">
+             <string>CG样式表</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="galCgStyleSheetLine"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_28">
+            <property name="text">
+             <string>音乐列表样式表</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="galMediaStyleSheetLine"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_29">
+            <property name="text">
+             <string>音乐播放器按钮</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <item>
+             <widget class="QPushButton" name="galMediapreBtn">
+              <property name="text">
+               <string>media_previous</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="galMediaNextBtn">
+              <property name="text">
+               <string>media_next</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="galMediaPauseBtn">
+              <property name="text">
+               <string>media_pause</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="galMediaModeBtn">
+              <property name="text">
+               <string>media_mode</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="title">
+          <string>场景按钮</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QPushButton" name="lockBtn">
+            <property name="text">
+             <string>lock</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="qsaveBtn">
+            <property name="text">
+             <string>qsave</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="qloadBtn">
+            <property name="text">
+             <string>qload</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="saveBtn">
+            <property name="text">
+             <string>save</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="loadBtn">
+            <property name="text">
+             <string>load</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="preBtn">
+            <property name="text">
+             <string>previous</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="autoBtn">
+            <property name="text">
+             <string>auto</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="skipBtn">
+            <property name="text">
+             <string>skip</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="historyBtn">
+            <property name="text">
+             <string>history</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="nextBtn">
+            <property name="text">
+             <string>next</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="hideBtn">
+            <property name="text">
+             <string>hide</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="configBtn">
+            <property name="text">
+             <string>config</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="mainBtn">
+            <property name="text">
+             <string>main</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

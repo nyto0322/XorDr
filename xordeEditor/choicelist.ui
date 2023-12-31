@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ChoiceList</class>
+ <widget class="QWidget" name="ChoiceList">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>505</width>
+    <height>361</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="1">
+    <widget class="QPushButton" name="pushButton">
+     <property name="text">
+      <string>保存</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QPushButton" name="btnAdd">
+     <property name="text">
+      <string>添加一项</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="2">
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="alternatingRowColors">
+      <bool>false</bool>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::ExtendedSelection</enum>
+     </property>
+     <column>
+      <property name="text">
+       <string>文本</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>跳转到</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>按钮</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>文本X</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>文本Y</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>文本W</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>文本H</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>文本字号增减</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>某章结束后显示</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string/>
+      </property>
+     </column>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
